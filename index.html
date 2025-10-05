@@ -5,23 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ímpetu Noir</title>
   <link rel="stylesheet" href="assets/styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Fuente elegante y animaciones -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>Ímpetu Noir</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="catalogo.html">Catálogo</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+ <header>
+  <div class="logo-container">
+    <img src="assets/img/LOGOS/logo_sintext.png" alt="Logo Ímpetu Noir" class="logo-icon">
+    <h1>ÍMPETU<br>NOIR</h1>
+  </div>
+
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main id="inicio">
     <section class="hero fade-in">
@@ -31,24 +36,46 @@
     </section>
 
     <!-- ===== LOGOS ===== -->
-    <section class="logos slide-up">
-      <div class="logo"><img src="assets/img/LOGOS/YSLOGO.png" alt="YSL"></div>
-      <div class="logo"><img src="assets/img/LOGOS/JPGLOGO.png" alt="Jean Paul Gaultier"></div>
-      <div class="logo"><img src="assets/img/LOGOS/DIORLOGO.png" alt="Dior"></div>
-      <div class="logo"><img src="assets/img/LOGOS/BvlgariLogo.png" alt="Bvlgari"></div>
-    </section>
+   <section class="logos slide-up">
+  <div class="logos-track">
+    <div class="logo"><img src="assets/img/LOGOS/YSLOGO.png" alt="YSL"></div>
+    <div class="logo"><img src="assets/img/LOGOS/JPGLOGO.png" alt="Jean Paul Gaultier"></div>
+    <div class="logo"><img src="assets/img/LOGOS/DIORLOGO.png" alt="Dior"></div>
+    <div class="logo"><img src="assets/img/LOGOS/BvlgariLogo.png" alt="Bvlgari"></div>
+    <div class="logo"><img src="assets/img/LOGOS/CHANEL-logo.png" alt="CHANEL"></div> 
+    <div class="logo"><img src="assets/img/LOGOS/Giorgio-Armani-Logo.png" alt="Giorgio Armani"></div>
+    <div class="logo"><img src="assets/img/LOGOS/Paco-Rabanne-Logo.png" alt="Rabanne"></div>
+    <div class="logo"><img src="assets/img/LOGOS/Prada-Logo-.png" alt="Prada"></div>
+    <div class="logo"><img src="assets/img/LOGOS/lattafa_logo.png" alt="Lataffa"></div>
 
+    <!-- Duplicados para el loop -->
+    <div class="logo"><img src="assets/img/LOGOS/YSLOGO.png" alt="YSL"></div>
+    <div class="logo"><img src="assets/img/LOGOS/JPGLOGO.png" alt="Jean Paul Gaultier"></div>
+    <div class="logo"><img src="assets/img/LOGOS/DIORLOGO.png" alt="Dior"></div>
+    <div class="logo"><img src="assets/img/LOGOS/BvlgariLogo.png" alt="Bvlgari"></div>
+    <div class="logo"><img src="assets/img/LOGOS/CHANEL-logo.png" alt="CHANEL"></div> 
+    <div class="logo"><img src="assets/img/LOGOS/Giorgio-Armani-Logo.png" alt="Giorgio Armani"></div>
+    <div class="logo"><img src="assets/img/LOGOS/Paco-Rabanne-Logo.png" alt="Rabanne"></div>
+    <div class="logo"><img src="assets/img/LOGOS/Prada-Logo-.png" alt="Prada"></div>
+    <div class="logo"><img src="assets/img/LOGOS/lattafa_logo.png" alt="Lataffa"></div>
+  </div>
+</section>
+
+ <!-- Boton para ir al catalogo -->
     <section class="hero">
       <a href="catalogo.html" class="btn pulse">Ver catálogo completo</a>
     </section>
 
+    
+
     <!-- ===== SECCIONES DEL CATÁLOGO ===== -->
+
     <section class="catalogo fade-in">
       <h2>Best Sellers</h2>
       <div class="productos">
         <article class="producto">
           <figure class="producto__img zoom">
-            <img src="assets/img/imgperfume/JPGLBLP.avif" alt="Le Beau Le Parfum">
+            <img src="assets/img/imgperfume/JPG_LeBeauLeParf.jpg" alt="Le Beau Le Parfum">
           </figure>
           <h3 class="producto__nombre">Le Beau Le Parfum</h3>
           <p class="producto__desc">Muy sexy y tropical.</p>
@@ -58,7 +85,7 @@
 
         <article class="producto">
           <figure class="producto__img zoom">
-            <img src="assets/img/imgperfume/DSEDP.jpg" alt="Sauvage EDP">
+            <img src="assets/img/imgperfume/Dior_SauvageEDP.jpg" alt="Sauvage EDP">
           </figure>
           <h3 class="producto__nombre">Sauvage EDP</h3>
           <p class="producto__desc">Fresco y con presencia.</p>
@@ -118,7 +145,7 @@
       <div class="productos">
         <article class="producto">
           <figure class="producto__img zoom">
-            <img src="assets/img/imgperfume/DSE.avif" alt="Sauvage Elixir">
+            <img src="assets/img/imgperfume/Dior_SauvageElixir.jpg" alt="Sauvage Elixir">
           </figure>
           <h3 class="producto__nombre">Sauvage Elixir</h3>
           <p class="producto__desc">Fragancia elegante, diferente y que se hace notar.</p>
@@ -128,7 +155,7 @@
 
         <article class="producto">
           <figure class="producto__img zoom">
-            <img src="assets/img/imgperfume/BMIN.avif" alt="Man in Black">
+            <img src="assets/img/imgperfume/Bvlgari_MIB.jpg" alt="Man in Black">
           </figure>
           <h3 class="producto__nombre">Bvlgari Man in Black EDP</h3>
           <p class="producto__desc">Aroma maduro, complejo y masculino.</p>
@@ -138,7 +165,7 @@
 
         <article class="producto">
           <figure class="producto__img zoom">
-            <img src="assets/img/imgperfume/JPGLMLP.avif" alt="Le Male Le Parfum">
+            <img src="assets/img/imgperfume/JPG_LeMaleLePArf.jpg" alt="Le Male Le Parfum">
           </figure>
           <h3 class="producto__nombre">Le Male Le Parfum</h3>
           <p class="producto__desc">Juvenil, sofisticada y muy completa.</p>
