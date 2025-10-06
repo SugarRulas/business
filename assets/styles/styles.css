@@ -220,6 +220,90 @@ header {
   margin-bottom: 3rem;
 }
 
+
+/* =========================
+   FILTRO CATÁLOGO
+========================= */
+.ordenar-catalogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ordenar-catalogo label {
+  font-weight: 600;
+  color: #111;
+  font-size: 1rem;
+}
+
+.ordenar-select {
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  border: 2px solid #d4af37;
+  background-color: #111;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ordenar-select:hover {
+  background-color: #d4af37;
+  color: #111;
+}
+
+.ordenar-select:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+/* Botones catalogo */
+
+.filtros-catalogo {
+  display: flex;
+  justify-content: center;   /* centra horizontalmente */
+  align-items: center;       /* alinea verticalmente */
+  gap: 1.5rem;               /* espacio entre los botones */
+  margin-bottom: 2rem;       /* espacio inferior respecto al catálogo */
+  flex-wrap: wrap;           /* si la pantalla es pequeña, se acomodan en dos filas */
+}
+
+
+.ordenar-catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.ordenar-catalogo label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111;
+  font-size: 1rem;
+}
+
+.ordenar-select {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ordenar-select:hover,
+.ordenar-select:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.4);
+  outline: none;
+}
+
+
+
 /* contenedor de productos alineado */
 .productos {
   display: flex;

@@ -1,242 +1,317 @@
-<header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Ímpetu Noir</title>
   <link rel="stylesheet" href="assets/styles/styles.css">
-  <div class="logo-container">
-    <img src="assets/img/LOGOS/logo_sintext.png" alt="Logo Ímpetu Noir" class="logo-icon">
-    <h1>ÍMPETU<br>NOIR</h1>
-  </div>
+</head>
 
-  <nav class="nav-bar">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="catalogo.html">Catálogo</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+<body>
 
-<section id="catalogo" class="catalogo">
-  <h2>Listado de Perfumes</h2>
+  <header>
+    <div class="logo-container">
+      <img src="assets/img/LOGOS/logo_sintext.png" alt="Logo Ímpetu Noir" class="logo-icon">
+      <h1>ÍMPETU<br>NOIR</h1>
+    </div>
 
-  <!-- ===Boton filtro === -->
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="catalogo" class="catalogo">
+    <h2>Listado de Perfumes</h2>
+
+   <!-- === Botón ordenar por precio === -->
+    <div class="filtros-catalogo">
 <div class="ordenar-catalogo">
-  <label for="ordenar">Ordenar por:</label>
-  <select id="ordenar" class="ordenar-select">
+  <label for="ordenar-precio">Ordenar por:</label>
+  <select id="ordenar-precio" class="ordenar-select">
     <option value="default">Predeterminado</option>
-    <option value="az">Nombre (A-Z)</option>
-    <option value="za">Nombre (Z-A)</option>
-    <option value="marca">Marca</option>
     <option value="precio-asc">Precio (menor a mayor)</option>
     <option value="precio-desc">Precio (mayor a menor)</option>
   </select>
 </div>
- 
 
-  <div class="productos">
-    <!-- 🟡 Producto 1 -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/Afnan_9pm.jpg" alt="Afnan 9 PM"></figure>
-      <h3 class="producto__nombre">Afnan 9 PM</h3>
-      <p class="producto__desc">Para fiestas o eventos nocturnos.</p>
-      <span class="producto__precio">Desde $50.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/Bvlgari_MGE.jpg" alt="Bvlgari Man Glacial Essence"></figure>
-      <h3 class="producto__nombre">Bvlgari Man Glacial Essence</h3>
-      <p class="producto__desc">Refrescante y diferente.</p>
-      <span class="producto__precio">Desde $165.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-    
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-      <img src="assets/img/imgperfume/Bvlgari_MIB.jpg" alt="Bvlgari Man in Black"></figure>
-      <h3 class="producto__nombre">Bvlgari Man in Black</h3>
-      <p class="producto__desc">Aroma maduro, complejo y masculino.</p>
-      <span class="producto__precio">Desde $145.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-    
-     <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/BleudeChanel_EDP.jpg" alt="Bleu de Chanel"></figure>
-      <h3 class="producto__nombre">Bleu de Chanel EDP</h3>
-      <p class="producto__desc">Clasico que nunca falla.</p>
-      <span class="producto__precio">Desde $155.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-    
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/Dior_HommeEDT.jpg" alt="Dior Homme 2020"></figure>
-      <h3 class="producto__nombre">Dior Homme EDT 2020</h3>
-      <p class="producto__desc">Punzante, citrico y amaderado.</p>
-      <span class="producto__precio">Desde $135.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-    
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/Dior_SauvageEDP.jpg" alt="Dior Sauvage EDP"></figure>
-      <h3 class="producto__nombre">Dior Sauvage EDP</h3>
-      <p class="producto__desc">Fresco y con presencia.</p>
-      <span class="producto__precio">Desde $165.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-    
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/Dior_SauvageElixir.jpg" alt="Dior Sauvage Elixir"></figure>
-      <h3 class="producto__nombre">Dior Sauvage Elixir</h3>
-      <p class="producto__desc">Fragancia elegante, diferente y que se hace notar.</p>
-      <span class="producto__precio">Desde $230.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-    
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/ADG_PArufm.jpg" alt="ADG Parfum"></figure>
-      <h3 class="producto__nombre">Acqua di Gio Parfum</h3>
-      <p class="producto__desc">Fresco y maduro.</p>
-      <span class="producto__precio">Desde $180.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-    
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/ADG_ProfondoEDP.jpg" alt="ADG Profondo EDP"></figure>
-      <h3 class="producto__nombre">Acqua di Gio Profondo EDP 2024</h3>
-      <p class="producto__desc">Fresca, renovada y juvenil.</p>
-      <span class="producto__precio">Desde $110.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-    
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/JPG_LeBeauLeParf.jpg" alt="Le Beau Le Parfum"></figure>
-      <h3 class="producto__nombre">Jean Paul Gautier Le Beau Le Parfum</h3>
-      <p class="producto__desc">Muy sexy y tropical.</p>
-      <span class="producto__precio">Desde $175.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
+<!-- === Botón filtrar por marca === -->
+<div class="ordenar-catalogo">
+  <label for="filtrar-marca">Ordenar por Marca:</label>
+  <select id="filtrar-marca" class="ordenar-select">
+    <option value="todas">Todas</option>
+    <option value="Afnan">Afnan</option>
+    <option value="Bvlgari">Bvlgari</option>
+    <option value="Chanel">Chanel</option>
+    <option value="Dior">Dior</option>
+    <option value="Armani">Armani</option>
+    <option value="Jean Paul Gaultier">Jean Paul Gaultier</option>
+    <option value="Lattafa">Lattafa</option>
+    <option value="Nautica">Nautica</option>
+    <option value="Rabanne">Rabanne</option>
+    <option value="Prada">Prada</option>
+    <option value="Yves Saint Laurent">Yves Saint Laurent</option>
+  </select>
+</div>
+</div>
 
 
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/JPG_LeMale Elixir.jpg" alt="Le Male Elixir"></figure>
-      <h3 class="producto__nombre">Jean Paul Gautier Le Male Elixir</h3>
-      <p class="producto__desc">Fiestera, ideal para citas.</p>
-      <span class="producto__precio">Desde $175.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
+    <!-- === Productos === -->
+    <div class="productos">
 
-
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/JPG_LeMaleLePArf.jpg" alt="Le Male Le Parfum"></figure>
-      <h3 class="producto__nombre">Jean Paul Gautier Le Male Le Parfum</h3>
-      <p class="producto__desc">Juvenil, sofisticada y muy completa.</p>
-      <span class="producto__precio">Desde $175.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/JPG_ScandalEDT.jpg" alt="JPG Scandal EDT"></figure>
-      <h3 class="producto__nombre">Jean Paul Gautier Scandal EDT</h3>
-      <p class="producto__desc">El rey de la fiesta.</p>
-      <span class="producto__precio">Desde $130.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/Lattafa_Khamrah.webp" alt="Lattafa_Khamrah"></figure>
-      <h3 class="producto__nombre">Lattafa Khamrah</h3>
-      <p class="producto__desc">Empalagoso, unisex y especial.</p>
-      <span class="producto__precio">Desde $50.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/Nautica_voyage.avif" alt="Nautica Voyage"></figure>
-      <h3 class="producto__nombre">Nautica Voyage</h3>
-      <p class="producto__desc">El matanichos 😰.</p>
-      <span class="producto__precio">Desde $40.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/Invictus_Parfum.jpg" alt="PR_Invictus Parfum"></figure>
-      <h3 class="producto__nombre">Rabanne Invictus Parfum</h3>
-      <p class="producto__desc">Diferente, fresco y muy versátil.0</p>
-      <span class="producto__precio">Desde $135.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/Prada_lommeEDT.jpg" alt="Prada Lomme EDT"></figure>
-      <h3 class="producto__nombre">Prada L'Homme EDT</h3>
-      <p class="producto__desc">Limpio y elegante.</p>
-      <span class="producto__precio">Desde $135.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
-
-
-    <!-- Bloque a copiar -->
-    <article class="producto">
-      <figure class="producto__img">
-        <img src="assets/img/imgperfume/YEDP.jpg" alt="YSL Y EDP"></figure>
-      <h3 class="producto__nombre">YSL Y EDP</h3>
-      <p class="producto__desc">Aroma sofisticado y duradero, ideal como perfume firma.</p>
-      <span class="producto__precio">Desde $150.00 MXN</span>
-      <button class="btn-comprar">Comprar</button>
-    </article>
+    <!-- Inicio de Productos -->
+<div class="productos">
    
-  </div>
-</section>
+     <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Afnan 9 PM" data-precio="50" data-marca="Afnan">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/Afnan_9pm.jpg" alt="Afnan 9 PM"></figure>
+    <h3 class="producto__nombre">Afnan 9 PM</h3>
+    <p class="producto__desc">Para fiestas o eventos nocturnos.</p>
+    <span class="producto__precio">Desde $50.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
 
-<footer id="contacto">
-  <p>Contacto: <a href="mailto:impetunoir@gmail.com">impetunoir@gmail.com</a></p>
-  <ul>
-    <li><a href="https://www.facebook.com/profile.php?id=61581335503935">Facebook</a></li>
-    <li><a href="https://www.instagram.com/impetunoir__decants">Instagram</a></li>
-    <li><a href="https://wa.me/5215636501716">WhatsApp</a></li>
-  </ul>
-</footer>
+      <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Bvlgari Man Glacial Essence" data-precio="165" data-marca="Bvlgari">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/Bvlgari_MGE.jpg" alt="Bvlgari Man Glacial Essence"></figure>
+    <h3 class="producto__nombre">Bvlgari Man Glacial Essence</h3>
+    <p class="producto__desc">Refrescante y diferente.</p>
+    <span class="producto__precio">Desde $165.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+     <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Bvlgari Man in Black" data-precio="145" data-marca="Bvlgari">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/Bvlgari_MIB.jpg" alt="Bvlgari Man in Black"></figure>
+    <h3 class="producto__nombre">Bvlgari Man in Black</h3>
+    <p class="producto__desc">Aroma maduro, complejo y masculino.</p>
+    <span class="producto__precio">Desde $145.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+      <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Bleu de Chanel EDP" data-precio="155" data-marca="Chanel">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/BleudeChanel_EDP.jpg" alt="Bleu de Chanel"></figure>
+    <h3 class="producto__nombre">Bleu de Chanel EDP</h3>
+    <p class="producto__desc">Clásico que nunca falla.</p>
+    <span class="producto__precio">Desde $155.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+      <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Dior Homme EDT 2020" data-precio="135" data-marca="Dior">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/Dior_HommeEDT.jpg" alt="Dior Homme 2020"></figure>
+    <h3 class="producto__nombre">Dior Homme EDT 2020</h3>
+    <p class="producto__desc">Punzante, cítrico y amaderado.</p>
+    <span class="producto__precio">Desde $135.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+  <article class="producto" data-nombre="Dior Sauvage EDP" data-precio="165" data-marca="Dior">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/Dior_SauvageEDP.jpg" alt="Dior Sauvage EDP"></figure>
+    <h3 class="producto__nombre">Dior Sauvage EDP</h3>
+    <p class="producto__desc">Fresco y con presencia.</p>
+    <span class="producto__precio">Desde $165.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+     <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Dior Sauvage Elixir" data-precio="230" data-marca="Dior">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/Dior_SauvageElixir.jpg" alt="Dior Sauvage Elixir"></figure>
+    <h3 class="producto__nombre">Dior Sauvage Elixir</h3>
+    <p class="producto__desc">Fragancia elegante, diferente y que se hace notar.</p>
+    <span class="producto__precio">Desde $230.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+     <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Acqua di Gio Parfum" data-precio="180" data-marca="Armani">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/ADG_PArufm.jpg" alt="ADG Parfum"></figure>
+    <h3 class="producto__nombre">Acqua di Gio Parfum</h3>
+    <p class="producto__desc">Fresco y maduro.</p>
+    <span class="producto__precio">Desde $180.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+     <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Acqua di Gio Profondo EDP 2024" data-precio="110" data-marca="Armani">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/ADG_ProfondoEDP.jpg" alt="ADG Profondo EDP"></figure>
+    <h3 class="producto__nombre">Acqua di Gio Profondo EDP 2024</h3>
+    <p class="producto__desc">Fresca, renovada y juvenil.</p>
+    <span class="producto__precio">Desde $110.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+     <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Jean Paul Gaultier Le Beau Le Parfum" data-precio="175" data-marca="Jean Paul Gaultier">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/JPG_LeBeauLeParf.jpg" alt="Le Beau Le Parfum"></figure>
+    <h3 class="producto__nombre">Jean Paul Gaultier Le Beau Le Parfum</h3>
+    <p class="producto__desc">Muy sexy y tropical.</p>
+    <span class="producto__precio">Desde $175.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+
+     <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Jean Paul Gaultier Le Male Elixir" data-precio="175" data-marca="Jean Paul Gaultier">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/JPG_LeMale Elixir.jpg" alt="Le Male Elixir"></figure>
+    <h3 class="producto__nombre">Jean Paul Gaultier Le Male Elixir</h3>
+    <p class="producto__desc">Fiestera, ideal para citas.</p>
+    <span class="producto__precio">Desde $175.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+
+  <!-- Bloque a copiar --> 
+   <article class="producto" data-nombre="Jean Paul Gaultier Le Male Le Parfum" data-precio="175" data-marca="Jean Paul Gaultier"> 
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/JPG_LeMaleLePArf.jpg" alt="Le Male Le Parfum"></figure> 
+    <h3 class="producto__nombre">Jean Paul Gautier Le Male Le Parfum</h3> 
+    <p class="producto__desc">Juvenil, sofisticada y muy completa.</p> 
+    <span class="producto__precio">Desde $175.00 MXN</span> 
+    <button class="btn-comprar">Comprar</button> 
+  </article>
+
+      <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Jean Paul Gaultier Scandal EDT" data-precio="130" data-marca="Jean Paul Gaultier">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/JPG_ScandalEDT.jpg" alt="JPG Scandal EDT"></figure>
+    <h3 class="producto__nombre">Jean Paul Gaultier Scandal EDT</h3>
+    <p class="producto__desc">El rey de la fiesta.</p>
+    <span class="producto__precio">Desde $130.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+
+      <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Lattafa Khamrah" data-precio="50" data-marca="Lattafa">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/Lattafa_Khamrah.webp" alt="Lattafa Khamrah"></figure>
+    <h3 class="producto__nombre">Lattafa Khamrah</h3>
+    <p class="producto__desc">Empalagoso, unisex y especial.</p>
+    <span class="producto__precio">Desde $50.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+   
+
+    <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Nautica Voyage" data-precio="40" data-marca="Nautica">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/Nautica_voyage.avif" alt="Nautica Voyage"></figure>
+    <h3 class="producto__nombre">Nautica Voyage</h3>
+    <p class="producto__desc">El matanichos 😰.</p>
+    <span class="producto__precio">Desde $40.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+
+     <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Rabanne Invictus Parfum" data-precio="135" data-marca="Rabanne">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/Invictus_Parfum.jpg" alt="PR Invictus Parfum"></figure>
+    <h3 class="producto__nombre">Rabanne Invictus Parfum</h3>
+    <p class="producto__desc">Diferente, fresco y muy versátil.</p>
+    <span class="producto__precio">Desde $135.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+
+     <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="Prada L'Homme EDT" data-precio="135" data-marca="Prada">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/Prada_lommeEDT.jpg" alt="Prada L'Homme EDT"></figure>
+    <h3 class="producto__nombre">Prada L'Homme EDT</h3>
+    <p class="producto__desc">Limpio y elegante.</p>
+    <span class="producto__precio">Desde $135.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+
+    <!-- Bloque a copiar --> 
+  <article class="producto" data-nombre="YSL Y EDP" data-precio="150" data-marca="YSL">
+    <figure class="producto__img">
+      <img src="assets/img/imgperfume/YEDP.jpg" alt="YSL Y EDP"></figure>
+    <h3 class="producto__nombre">YSL Y EDP</h3>
+    <p class="producto__desc">Aroma sofisticado y duradero, ideal como perfume firma.</p>
+    <span class="producto__precio">Desde $150.00 MXN</span>
+    <button class="btn-comprar">Comprar</button>
+  </article>
+
+</div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>Contacto: <a href="mailto:impetunoir@gmail.com">impetunoir@gmail.com</a></p>
+    <ul>
+      <li><a href="https://www.facebook.com/profile.php?id=61581335503935">Facebook</a></li>
+      <li><a href="https://www.instagram.com/impetunoir__decants">Instagram</a></li>
+      <li><a href="https://wa.me/5215636501716">WhatsApp</a></li>
+    </ul>
+  </footer>
+
+
+  <!-- Javascript para boton filtrado -->
+<script>
+
+  const selectOrdenarPrecio = document.getElementById('ordenar-precio');
+  const contenedorProductos = document.querySelector('.productos');
+  const productos = Array.from(contenedorProductos.querySelectorAll('.producto'));
+
+  selectOrdenarPrecio.addEventListener('change', () => {
+    const valor = selectOrdenarPrecio.value;
+    let productosOrdenados = [...productos];
+
+    switch (valor) {
+      case 'precio-asc':
+        productosOrdenados.sort((a, b) => parseFloat(a.dataset.precio) - parseFloat(b.dataset.precio));
+        break;
+      case 'precio-desc':
+        productosOrdenados.sort((a, b) => parseFloat(b.dataset.precio) - parseFloat(a.dataset.precio));
+        break;
+      default:
+        productosOrdenados = [...productos];
+    }
+
+    contenedorProductos.innerHTML = '';
+    productosOrdenados.forEach(prod => contenedorProductos.appendChild(prod));
+  });
+
+  const filtroMarca = document.getElementById('filtrar-marca');
+
+  filtroMarca.addEventListener('change', () => {
+    const marcaSeleccionada = filtroMarca.value.trim();
+
+    productos.forEach(producto => {
+      const marcaProducto = producto.dataset.marca?.trim();
+
+      if (marcaSeleccionada === 'todas' || marcaSeleccionada === '') {
+        producto.style.display = 'block';
+      } else if (marcaProducto === marcaSeleccionada) {
+        producto.style.display = 'block';
+      } else {
+        producto.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+
+
+
+</body>
+</html>
